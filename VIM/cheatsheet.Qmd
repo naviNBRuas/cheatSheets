@@ -1,7 +1,7 @@
 ---
 title: cheatSheet.VIM
 author: navinBR
-output:
+format:
   pdf:
     filename: cheatsheet.pdf
 quarto:
