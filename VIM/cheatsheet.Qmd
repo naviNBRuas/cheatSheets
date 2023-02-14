@@ -1,0 +1,165 @@
+---
+title: cheatSheet.VIM
+author: navinBR
+output:
+  pdf:
+    filename: cheatsheet.pdf
+quarto:
+  custom_visuals:
+    - type: table_of_contents
+      level: 2
+    - type: code_block
+      language: plaintext
+      theme: monokai
+    - type: heading
+      level: 2
+      underline: true
+      color: blue
+---
+
+# Overview
+VIM (Vi IMproved) is a popular and highly configurable text editor for Unix-based systems. It has a user-friendly interface and supports many advanced features such as syntax highlighting, code folding, and regular expression search and replace.
+
+## Basic Commands
+
+- `i`: Insert mode.
+- `Esc`: Normal mode.
+- `:w`: Write the current file.
+- `:q`: Quit the current file.
+- `:q!`: Quit the current file without saving.
+- `:wq`: Write and quit the current file.
+- `dd`: Delete the current line.
+- `x`: Delete the character under the cursor.
+- `p`: Paste the deleted text after the cursor.
+- `h`: Move the cursor one character to the left.
+- `j`: Move the cursor one line down.
+- `k`: Move the cursor one line up.
+- `l`: Move the cursor one character to the right.
+- `o`: Open a new line below the cursor.
+- `O`: Open a new line above the cursor.
+- `:r file`: Read the contents of `file` and insert it below the cursor.
+- `:read !command`: Read the output of `command` and insert it below the cursor.
+
+## Advanced Commands
+
+- `v`: Visual mode.
+- `V`: Visual line mode.
+- `Ctrl-v`: Visual block mode.
+- `u`: Undo the last change.
+- `Ctrl-r`: Redo the last change.
+- `/pattern`: Search for `pattern` in the current file.
+- `?pattern`: Search backwards for `pattern` in the current file.
+- `n`: Move to the next match.
+- `N`: Move to the previous match.
+- `:%s/old/new/g`: Replace all instances of `old` with `new` in the current file.
+- `:set number`: Show line numbers.
+- `:set nonumber`: Hide line numbers.
+- `:set ignorecase`: Ignore case when searching.
+- `:set noignorecase`: Respect case when searching.
+- `:syntax on`: Enable syntax highlighting.
+- `:syntax off`: Disable syntax highlighting.
+- `:set wrap`: Wrap lines at the edge of the screen.
+- `:set nowrap`: Don't wrap lines.
+- `:set tabstop=n`: Set the tab width to `n` spaces.
+- `:set expandtab`: Replace tabs with spaces.
+- `:set noexpandtab`: Keep tabs as tabs.
+- `:g/pattern/p`: Print all lines containing `pattern`.
+- `:g!/pattern/p`: Print all lines not containing `pattern`.
+- `:sort`: Sort the current lines in alphabetical order.
+- `:sort!`: Sort the current lines in reverse alphabetical order.
+- `:sort u`: Sort the current lines in unique alphabetical order.
+- `:sort u!`: Sort the current lines in unique reverse alphabetical order.
+- `:%!command`: Run `command` on the entire file.
+- `:g/pattern/!command`: Run `command` on all lines containing `pattern`.
+- `:g!/pattern/!command`: Run `command` on all lines not containing `pattern`.
+- `:v/pattern/command`: Run `command` on all lines not containing `pattern`.
+- `:set hlsearch`: Highlight search results.
+- `:set nohlsearch`: Don't highlight search results.
+- `:copen`: Open the quickfix window.
+- `:cclose`: Close the quickfix window.
+- `:cn`: Move to the next error in the quickfix window.
+- `:cp`: Move to the previous error in the quickfix window.
+- `:cw`: Write the changes in the quickfix window.
+- `:cl`: Load the changes in the quickfix window.
+- `:cq`: Quit the quickfix window without saving.
+
+## Tips and Tricks
+- `.`: Repeat the last change.
+- `Ctrl-o`: Move to the previous position in the jump list.
+- `Ctrl-i`: Move to the next position in the jump list.
+- `g;`: Move to the previous change.
+- `g,`: Move to the next change.
+- `:reg`: Display the contents of the register.
+- `"xy`: Yank (copy) the selected text into register `x`.
+- `"xp`: Paste the contents of register `x` after the cursor.
+- `:map`: Display the current mappings.
+- `:map!`: Display the current mappings, including those in the `.vimrc` file.
+- `:map <key> <command>`: Create a mapping for `<key>` to run `<command>`.
+- `:nmap <key> <command>`: Create a mapping for `<key>` to run `<command>` in Normal mode.
+- `:vmap <key> <command>`: Create a mapping for `<key>` to run `<command>` in Visual mode.
+- `:imap <key> <command>`: Create a mapping for `<key>` to run `<command>` in Insert mode.
+- `:unmap <key>`: Remove the mapping for `<key>`.
+- `:nunmap <key>`: Remove the mapping for `<key>` in Normal mode.
+- `:vunmap <key>`: Remove the mapping for `<key>` in Visual mode.
+- `:iunmap <key>`: Remove the mapping for `<key>` in Insert mode.
+- `:set background=dark`: Use a dark background.
+- `:set background=light`: Use a light background.
+- `:colorscheme`: Display the current color scheme.
+- `:colorscheme <scheme>`: Set the color scheme to `<scheme>`.
+- `:autocmd`: Display the current autocommands.
+- `:autocmd <event> <command>`: Run `<command>` whenever `<event>` occurs.
+- `:tabnew`: Create a new tab.
+- `:tabclose`: Close the current tab.
+- `:tabnext`: Move to the next tab.
+- `:tabprev`: Move to the previous tab.
+- `:tabfirst`: Move to the first tab.
+- `:tablast`: Move to the last tab.
+
+## Visual Studio Code Vim Extension Cheatsheet
+- Enter Vim mode: `Ctrl + [`
+- Normal mode commands:
+  - `h`: Move cursor left
+  - `j`: Move cursor down
+  - `k`: Move cursor up
+  - `l`: Move cursor right
+  - `i`: Enter insert mode
+  - `a`: Enter insert mode after the cursor
+  - `o`: Enter insert mode on a new line below the cursor
+  - `O`: Enter insert mode on a new line above the cursor
+  - `v`: Start visual selection mode
+  - `V`: Start line visual selection mode
+  - `u`: Undo
+  - `ctrl + r`: Redo
+  - `/`: Start searching
+  - `n`: Find next occurrence of search
+  - `N`: Find previous occurrence of search
+  - `dd`: Delete current line
+  - `dw`: Delete current word
+  - `cw`: Change current word
+  - `p`: Paste
+  - `r`: Replace character under cursor
+- Visual mode commands:
+  - `v`: Start visual selection mode
+  - `V`: Start line visual selection mode
+  - `d`: Delete selected text
+  - `c`: Change selected text
+- Search mode commands:
+  - `n`: Find next occurrence of search
+  - `N`: Find previous occurrence of search
+  - `Enter`: Exit search mode
+- Exit Vim mode: `Esc`
+
+## Visual Studio Code Vim Extension
+- Visual Studio Code Vim Extension: https://github.com/VSCodeVim/Vim
+- How to use Visual Studio Code Vim Extension: https://code.visualstudio.com/docs/editor/vim
+- Visual Studio Code Vim FAQs: https://github.com/VSCodeVim/Vim/wiki/FAQ
+- Visual Studio Code Vim Command Palette: https://github.com/VSCodeVim/Vim/wiki/Command-Palette
+- Visual Studio Code Vim Keyboard Shortcuts: https://code.visualstudio.com/docs/editor/codebasics#_keyboard-shortcuts
+
+## Reference
+- VIM homepage: https://www.vim.org/
+- VIM manual: https://vimdoc.sourceforge.io/
+- VIM tutorial: https://www.openvim.com/
+- VIM cheat sheet: https://vim.rtorr.com/
+- VIM forums: https://vim.userecho.com/
+- VIM plugins: https://vimawesome.com/
