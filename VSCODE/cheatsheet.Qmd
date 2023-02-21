@@ -1,0 +1,160 @@
+---
+title: cheatSheet.VSCode
+author: navinBR
+format:
+  pdf:
+    filename: cheatsheet.pdf
+quarto:
+  custom_visuals:
+    - type: table_of_contents
+      level: 2
+    - type: code_block
+      language: plaintext
+      theme: monokai
+    - type: heading
+      level: 2
+      underline: true
+      color: blue
+---
+
+# Overview
+
+Visual Studio Code (VSCODE) is a lightweight but powerful source code editor developed by Microsoft. It's free and available for Windows, macOS, and Linux. It supports many programming languages and has many advanced features, such as debugging, version control, and intelligent code completion.
+
+In this cheatsheet, we'll cover the basic and advanced commands for working with VSCODE, as well as tips and tricks for improving your productivity. We'll also cover extension management, which allows you to customize and enhance VSCODE's functionality. Finally, we'll provide a reference section with additional resources for learning and mastering VSCODE.
+
+# Basic Commands
+Visual Studio Code (VSCODE) is a popular and highly configurable text editor developed by Microsoft. It has a user-friendly interface and supports many advanced features such as syntax highlighting, code folding, and Git integration.
+
+## Basic Navigation
+
+- `Ctrl+Shift+P`: Open the Command Palette.
+- `Ctrl+Shift+N`: Open a new window.
+- `Ctrl+Shift+W`: Close the current window.
+- `Ctrl+Tab`: Switch between open tabs.
+- `Ctrl+Shift+Tab`: Switch to the previous tab.
+- `Ctrl+B`: Toggle the Sidebar visibility.
+- `Ctrl+Shift+E`: Open the Explorer view.
+- `Ctrl+Shift+G`: Open the Git view.
+- `Ctrl+Shift+D`: Open the Debug view.
+- `Ctrl+Shift+F`: Open the Search view.
+- `Ctrl+Shift+X`: Open the Extensions view.
+- `Ctrl+Shift+H`: Replace in files.
+- `Ctrl+P`: Quick Open a file.
+- `Ctrl+Shift+P`, then `Preferences: Open Keyboard Shortcuts`: Open the Keyboard Shortcuts editor.
+
+## Basic Editing
+
+- `Ctrl+C`: Copy selected text.
+- `Ctrl+X`: Cut selected text.
+- `Ctrl+V`: Paste copied or cut text.
+- `Ctrl+Z`: Undo the last action.
+- `Ctrl+Shift+Z`: Redo the last undone action.
+- `Ctrl+F`: Find text in the current file.
+- `F3`: Find the next occurrence of the last search term.
+- `Shift+F3`: Find the previous occurrence of the last search term.
+- `Alt+Enter`: Select all occurrences of the current selection.
+- `Ctrl+Shift+L`: Select all occurrences of the current selection and edit them simultaneously.
+- `Ctrl+K Ctrl+C`: Comment out selected code.
+- `Ctrl+K Ctrl+U`: Uncomment selected code.
+
+## Basic Terminal
+
+- `Ctrl+~`: Open a new Terminal.
+- `Ctrl+C`: Send a SIGINT signal to the current process in the Terminal.
+- `Ctrl+Shift+C`: Copy selected text from the Terminal.
+- `Ctrl+Shift+V`: Paste text into the Terminal.
+
+## Basic Settings
+
+- `Ctrl+,`: Open the User Settings editor.
+- `Ctrl+Shift+,`: Open the Workspace Settings editor.
+- `Ctrl+Shift+P`, then `Preferences: Open Settings (JSON)`: Open the Settings JSON file directly.
+
+# Advanced Commands
+
+## Navigation
+
+- `Ctrl+G`: Show line number and column number of the cursor position
+- `Ctrl+P`: Quick open file by name
+- `Ctrl+Shift+O`: Navigate to a specific symbol in the file
+- `Ctrl+Shift+M`: Show all problems and errors in the current project
+- `Ctrl+Shift+Tab`: Switch between opened files
+
+## Editing
+
+- `Ctrl+D`: Select the next occurrence of the selected text
+- `Alt+Shift+Down Arrow`: Copy line down
+- `Alt+Shift+Up Arrow`: Copy line up
+- `Alt+Left Arrow`: Go to the previous cursor position
+- `Alt+Right Arrow`: Go to the next cursor position
+- `Ctrl+Shift+K`: Delete line
+- `Ctrl+L`: Select current line
+- `Ctrl+Shift+L`: Select all occurrences of the current selection
+
+## Search
+
+- `Ctrl+F`: Find text in the current file
+- `Ctrl+H`: Replace text in the current file
+- `Ctrl+Shift+F`: Find text in all files in the current project
+- `Ctrl+Shift+H`: Replace text in all files in the current project
+
+## Debugging
+
+- `F5`: Start debugging
+- `F9`: Toggle breakpoint
+- `Shift+F5`: Stop debugging
+- `F11`: Step into
+- `F10`: Step over
+- `Shift+F11`: Step out
+- `Ctrl+Shift+F5`: Restart debugging
+- `Ctrl+K F9`: Set conditional breakpoint
+
+# Tips and Tricks
+
+- Use `Ctrl + Shift + P` to open the Command Palette and quickly access various commands.
+- Use `Ctrl + B` to toggle the sidebar.
+- Use `Ctrl + Shift + E` to open the Explorer view.
+- Use `Ctrl + Shift + F` to open the Search view.
+- Use `Ctrl + Shift + G` to open the Source Control view.
+- Use `Ctrl + Shift + D` to open the Debug view.
+- Use `Ctrl + P` to quickly open files in your workspace.
+- Use `Ctrl + Tab` to quickly switch between open files.
+- Use `Ctrl + Shift + L` to select all occurrences of a word in your document.
+- Use `Alt + Up` or `Alt + Down` to move a line of code up or down in your document.
+- Use `Ctrl + /` to comment or uncomment a line of code.
+- Use `Ctrl + Shift + K` to delete a line of code.
+- Use `Ctrl + Shift + V` to open the Markdown preview of your document.
+
+## Extension Management
+
+- `Ctrl + Shift + X`: Open the Extensions view.
+- `Ctrl + Shift + P`: Open the Command Palette and type `Extensions: Install Extensions` to search for and install extensions.
+- `@installed`: Lists all installed extensions in the Extensions view.
+- `@recommended`: Lists recommended extensions in the Extensions view.
+- `@outdated`: Lists outdated extensions in the Extensions view.
+- `@enabled`: Lists enabled extensions in the Extensions view.
+- `@disabled`: Lists disabled extensions in the Extensions view.
+- `@builtin`: Lists built-in extensions in the Extensions view.
+- `F1`: Open the Command Palette and type `Extensions: Show Recommended Extensions` to see a list of recommended extensions.
+- `F1`: Open the Command Palette and type `Extensions: Check for Extension Updates` to check for available updates to installed extensions.
+- `F1`: Open the Command Palette and type `Extensions: Update All Extensions` to update all installed extensions to their latest versions.
+
+## Other Tricks
+
+- Multiple cursors: `Alt+Click` to create multiple cursors and edit the same text simultaneously.
+- Zen Mode: `Ctrl+K Z` to enter and exit Zen mode, which maximizes the editor window and hides all UI elements except for the text.
+- Emmet: A plugin that enables powerful HTML and CSS abbreviations. Type `!` and press `Tab` to create a basic HTML structure.
+- Snippets: Create custom code snippets using `Preferences: Configure User Snippets` command. Use placeholders like `$1`, `$2`, etc. to quickly move between sections of the code.
+- Workspace settings: Use the `Preferences: Open Workspace Settings` command to set preferences for individual workspaces or projects.
+
+# Reference
+
+Here are some useful resources for learning more about Visual Studio Code:
+
+- [Visual Studio Code Docs](https://code.visualstudio.com/docs) - The official documentation for Visual Studio Code.
+- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode) - A marketplace of extensions for Visual Studio Code.
+- [VS Code Can Do That](https://vscodecandothat.com/) - A collection of tips and tricks for using Visual Studio Code.
+- [VS Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks) - Official tips and tricks for using Visual Studio Code.
+- [Visual Studio Code Keyboard Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) - A comprehensive list of keyboard shortcuts for Visual Studio Code.
+- [Visual Studio Code GitHub Repository](https://github.com/microsoft/vscode) - The official GitHub repository for Visual Studio Code.
